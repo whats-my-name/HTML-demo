@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <title>HTMLdemo</title>
+    <link rel="stylesheet" href="css/css.css">
 
 </head>
 <body>
 
-    <a href="part1.html">文字与段落</a>
-    <a href="part2.html">列表</a>
-    <a href="part3.html">超链接</a>
-    <a href="part4.html">表格</a>
-    <table border="1" width="250px" height="170px">
-        <tr>
-            <td> 123</td>
-        </tr>
-        <tr>
-            <td>1231</td>
-        </tr>
-    </table>
+    <header>
+        我的网站 <!-- 顶部固定的标题 -->
+    </header>
+    <div class="container">
+        <nav class="sidebar">
+          <ul class="menu">
+            <li><a href="part1.html">文字与段落</a></li>
+            <li><a href="part2.html">列表</a></li>
+            <li><a href="part3.html">超链接</a></li>
+            <li><a href="part4.html">表格</a></li>
+        </ul>
+        </nav>
+        <main class="content">
+            <h2 id="h0">欢迎来到我的网站</h2> <!-- 右侧内容区域 -->
+            <p>本网页的作用是记录自己学习web过程,制作一个自己的blog 
+                技术有限,审美也不在线,就只能先做成这个样子了
+                </p>
+        </main>
+    </div>
+
 </body>
 
 </html>

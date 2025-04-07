@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box; /* 设置元素的盒子模型 */
+    margin: 0; /* 清除默认页面边距 */
+    padding: 0; /* 清除默认内边距 */
+}
+
+body {
+    font-family: Arial, sans-serif; /* 设置字体 */
+}
+
+header {
+    position: fixed; /* 固定在页面顶部 */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333; /* 背景颜色 */
+    color: white; /* 字体颜色 */
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    display: flex; /* 使用弹性布局 */
+    margin-top: 50px; /* 留出顶部空间 */
+}
+
+.sidebar {
+    width: 200px; /* 左侧导航宽度 */
+    background-color: #f4f4f4; /* 背景颜色 */
+    height: calc(100vh - 50px); /* 高度根据视口计算 */
+}
+
+.sidebar ul {
+    list-style: none; /* 去掉列表符号 */
+}
+
+.sidebar ul li {
+    padding: 15px; /* 列表项内边距 */
+}
+
+.sidebar ul li a {
+    text-decoration: none; /* 去掉链接下划线 */
+    color: #333; /* 链接颜色 */
+}
+
+.content {
+    flex-grow: 1; /* 右侧内容区利用剩余空间 */
+    padding: 20px; /* 右侧内容内边距 */
+}
