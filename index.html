@@ -5,11 +5,31 @@
     <title>HTMLdemo</title>
     <link rel="stylesheet" href="css/css.css">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
 </head>
 <body>
-
+<!--音乐播放器-->
+    <div>
+        <meting-js
+        server="netease"    
+        type="playlist"       
+        id="2811637909"       
+        fixed="true"       
+        autoplay="false"   
+        loop="all"          
+        order="list"     
+        preload="auto"      
+        list-folded="ture"      
+        list-max-height="600px"
+        theme="#dc6b82"    
+        lrc-type="1">       
+</meting-js>
+    </div>
+    
     <header>
-        我的网站 <!-- 顶部固定的标题 -->
+        柏松的小网页 <!-- 顶部固定的标题 -->
     </header>
     <div class="container">
         <nav class="sidebar">
@@ -18,14 +38,42 @@
             <li><a href="part2.html">列表</a></li>
             <li><a href="part3.html">超链接</a></li>
             <li><a href="part4.html">表格</a></li>
+            <li><a href="part5.html">工具箱</a></li>
         </ul>
+
         </nav>
         <main class="content">
             <h2 id="h0">欢迎来到我的网站</h2> <!-- 右侧内容区域 -->
             <p>本网页的作用是记录自己学习web过程,制作一个自己的blog 
-                技术有限,审美也不在线,就只能先做成这个样子了
-                </p>
+                技术有限,审美也不在线,就只能先做成这个样子了(需要人手啊)
+            </p>
+            <table border="1" width="100%">
+                <tr>
+                    <td><img height=270 width=100% src="img/1.jpg" alt="这里有个图片"></td>
+                    <td><img height=270 width=100% src="img/2.png" alt="这里有个图片"></td>
+                </tr>
+                <tr>
+                    <td><img  height=270 width=100% src="img/3.jpg" alt="这里有个图片"></td>
+                    <td><img height=270 width=100% src="img/4.jpg" alt="这里有个图片"></td>
+                </tr>
+                <tr>
+                    <td height=270 width=480 class="t-middle">广告位招商</td>
+                    <td height=270 width=480 class="t-middle">广告位招商</td>
+                </tr>
+                </tr>
+            </table>
         </main>
+
+        <div class="right sidebar ul">
+            <nav>
+                <ul>
+                    <li><table border="" class="t-color">
+                        <tr><td id="text"><h4>示例文字</h4></td></tr></table></li>
+                    <li> <p>(这里是试颜色的,没什么好看的)</p></li>
+                </ul>
+            </nav>
+
+        </div>
     </div>
 
 </body>
