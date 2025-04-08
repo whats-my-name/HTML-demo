@@ -13,9 +13,10 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #333; /* 背景颜色 */
-    color: white; /* 字体颜色 */
-    padding: 10px;
+    background-color:#f091a0 ; /* 背景颜色 */
+    color: #efc4ce; /* 字体颜色 */
+    font-size :15px; /* 字体大小 */;
+    padding: 15px;
     text-align: center;
 }
 
@@ -26,8 +27,8 @@ header {
 
 .sidebar {
     width: 200px; /* 左侧导航宽度 */
-    background-color: #f4f4f4; /* 背景颜色 */
-    height: calc(100vh - 50px); /* 高度根据视口计算 */
+    background-color: #e2a2ac; /* 背景颜色 */
+    height:auto; /* 高度根据视口计算 */
 }
 
 .sidebar ul {
@@ -44,6 +45,29 @@ header {
 }
 
 .content {
-    flex-grow: 1; /* 右侧内容区利用剩余空间 */
-    padding: 20px; /* 右侧内容内边距 */
+	flex: 1;
+	margin: 0 10px;
+}
+
+.right{
+   height: auto;
+	width: 180px;
+	background:#e4b8d5;
+    text-align: center;
+}
+
+.t-color{
+    width: 100%;
+    height: 100px;
+    background: #D4E5EF;
+#text{
+    color: #eff0f1;
+    text-align: center;
+    }
+}
+.t-middle{
+    font-size: 80px;
+    color: #665f4d;
+    text-align: center;
+    background: #c6beb1;
 }
