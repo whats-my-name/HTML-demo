@@ -6,7 +6,11 @@
 
 body {
     font-family: Arial, sans-serif; /* 设置字体 */
-height: 100%;
+    height: 100%; /* 设置body为全屏 */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
 }
 
 header {
@@ -75,4 +79,14 @@ header {
 .链接{
     text-decoration: none; /* 去掉链接下划线 */
     color: #333; /* 链接颜色 */
+}
+@keyframes break{
+    0%{background-color: #f091a0;}
+    50%{background-color: #e2a2ac;}
+    100%{background-color: #f091a0;}
+}
+.led{
+    width:  100%;
+    height: 130px;
+    animation: break 1s infinite;
 }
