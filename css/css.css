@@ -70,23 +70,128 @@ header {
     text-align: center;
     }
 }
+
 .t-middle{
     font-size: 80px;
     color: #665f4d;
     text-align: center;
     background: #c6beb1;
 }
+
 .链接{
     text-decoration: none; /* 去掉链接下划线 */
     color: #333; /* 链接颜色 */
 }
-@keyframes break{
-    0%{background-color: #f091a0;}
-    50%{background-color: #e2a2ac;}
-    100%{background-color: #f091a0;}
+
+.photo1:hover {
+    height:540px;
+    width:100%;
+    background-size:100% 540px;
+    background-repeat: no-repeat;
+    background-image:url("../img/1.jpg");
+    #hidden{
+        display: none;
+    }
 }
-.led{
-    width:  100%;
-    height: 130px;
-    animation: break 1s infinite;
+
+.photo2:hover{
+    height:540px;
+    width:100%;
+    background-size:100% 540px;
+    background-image:url("../img/2.png"); 
+    #hidden{
+        display: none;
+    }
+}
+.photo3:hover{
+    height:540px;
+    width:100%;
+    background-size:100% 540px;
+    background-image:url("../img/3.jpg");
+    #hidden{
+        display: none;
+    }
+}
+.photo4:hover{
+    height:540px;
+    width:100%;
+    background-size:100% 540px;
+    background-image:url("../img/4.jpg");
+    #hidden{
+        display: none;
+    }
+}
+
+@keyframes break1{
+    0%{background-color: #f091a0;}
+    50%{background-color: #6a2e8d;
+        transform: rotate(72deg);}
+    100%{background-color: #8563b1;
+        transform: rotate(144deg);}
+}
+@keyframes break2{
+    0%{background-color: #8563b1;}
+    50%{background-color: #6a2e8d;
+    transform: rotate(144deg);}
+    100%{background-color: #9228a7;
+        transform: rotate(216deg);}
+
+}
+@keyframes break3{
+    0%{background-color: #9228a7;}
+    50%{background-color: #6a2e8d;
+    transform: rotate(216deg);}
+    100%{background-color: #e375e7;
+        transform: rotate(288deg);}
+}
+@keyframes break4{
+    0%{background-color: #e375e7;}
+    50%{background-color: #6a2e8d;
+    transform: rotate(288deg);}
+    100%{background-color: #822b94;
+        transform: rotate(360deg);}
+}
+@keyframes break5{
+    0%{background-color: #822b94;}
+    50%{background-color: #6a2e8d;
+    transform: rotate(360deg);}
+    100%{background-color: #c95ed3e7;
+        transform: rotate(432deg);}
+}
+
+.flower{
+    margin: 10px;
+    padding: 15px;
+    width:160px;
+    height:160px;
+    border-radius: 100%;
+}
+.flower div {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 0 100px;
+    transform-origin: 100% 100%;
+    position: absolute;
+    animation: break1 5s infinite;
+}
+
+.flower .flower2 {
+    transform: rotate(72deg);
+    animation: break2 5s infinite;
+}
+
+.flower .flower3 {
+    transform: rotate(144deg);
+    animation: break3 5s infinite;
+}
+
+.flower .flower4 {
+    transform: rotate(216deg);
+    animation: break4 5s infinite;
+}
+
+.flower .flower5 {
+    transform: rotate(288deg);
+    animation: break5 5s infinite;
 }
