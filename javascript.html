@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js部分</title>
+    <script src="js/js.js" type="text/javascript">
+
+
+
+
+    </script>
+        
+</head>
+<body>
+    <a href="home.html">返回首页</a>
+    <a href="javascript:alert('hello')">点击弹出hello</a>
+
+<table>
+    <tr>
+        <td>比大小
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <label for="firstnum"> 第一个数:</label><input type="text" id="num1" /><br>
+            第二个数:<input type="text" id="num2" /><br>
+            第三个数:<input type="text" id="num3" /><br>
+            最大值是:<input type="text" id="max" readonly/><button onclick="showmax()" value="最大值">最大值</button>
+        </td>
+    </tr>
+<tr>
+    <td >
+        var jiu = document.getElementById("jiu");
+for(var i = 9; i >= 1; i--){
+   for(var j = 1; j <= i; j++){
+    jiu.innerHTML += j + "*" + i + "=" + i*j + "  ";
+   }
+}
+    </td>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>
