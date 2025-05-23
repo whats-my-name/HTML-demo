@@ -29,15 +29,25 @@
             最大值是:<input type="text" id="max" readonly/><button onclick="showmax()" value="最大值">最大值</button>
         </td>
     </tr>
+
+    <tr>
+        <td>
+            使用js实现倒置九九乘法表:
+        </td>
+    </tr>
 <tr>
-    <td >
-        var jiu = document.getElementById("jiu");
-for(var i = 9; i >= 1; i--){
-   for(var j = 1; j <= i; j++){
-    jiu.innerHTML += j + "*" + i + "=" + i*j + "  ";
-   }
-}
-    </td>
+    <td > 
+         <script>   
+        for(var i = 9; i >= 1; i--){
+            for(var j = 1; j <= i; j++){
+                 document.write(j+'*'+i+'='+i*j+'\t');
+                //  jiu.innerHTML += j + "*" + i + "=" + i*j + "  ";
+                }
+                 document.write('<br>');
+                }
+                
+</script>
+
     </td>
 </tr>
 </table>
