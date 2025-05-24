@@ -31,7 +31,7 @@ header {
 }
 
 .sidebar {
-    width: 200px; /* 左侧导航宽度 */
+    flex: 0.5; /* 左侧导航宽度 */
     background-color: #e2a2ac; /* 背景颜色 */
     height:auto; /* 高度根据视口计算 */
 }
@@ -50,13 +50,13 @@ header {
 }
 
 .content {
-	flex: 1;
+	flex: 4;
 	margin: 0 10px;
 }
 
 .right{
    height: auto;
-	width: 180px;
+	flex: 0.5;
 	background:#e4b8d5;
     text-align: center;
 }
@@ -123,40 +123,55 @@ header {
 }
 
 @keyframes break1{
-    0%{background-color: #f091a0;}
-    50%{background-color: #6a2e8d;
-        transform: rotate(72deg);}
-    100%{background-color: #8563b1;
-        transform: rotate(144deg);}
+    0%{background-color: #faa;}
+    50%{background-color: #faa;
+        transform: rotate(360deg);
+    }
+    100%{background-color: #fbb;
+        /* transform: rotate(720deg); */
+    }
 }
 @keyframes break2{
-    0%{background-color: #8563b1;}
-    50%{background-color: #6a2e8d;
-    transform: rotate(144deg);}
-    100%{background-color: #9228a7;
-        transform: rotate(216deg);}
+    0%{background-color: #fbb;
+    transform: rotate(0deg);}
+    50%{background-color: #faa;
+    transform: rotate(432deg);
+}
+    100%{background-color: #fcc;
+        transform: rotate(0deg);
+    }
 
 }
 @keyframes break3{
-    0%{background-color: #9228a7;}
-    50%{background-color: #6a2e8d;
-    transform: rotate(216deg);}
-    100%{background-color: #e375e7;
-        transform: rotate(288deg);}
+    0%{background-color: #fcc;
+        transform: rotate(0deg);
+    }
+    50%{background-color: #faa;
+    transform: rotate(504deg);
+}
+    100%{background-color: #fdd;
+        transform: rotate(0deg);
+    }
 }
 @keyframes break4{
-    0%{background-color: #e375e7;}
-    50%{background-color: #6a2e8d;
-    transform: rotate(288deg);}
-    100%{background-color: #822b94;
-        transform: rotate(360deg);}
+    0%{background-color: #fdd;
+    transform: rotate(0deg);}
+    50%{background-color: #faa;
+    transform: rotate(576deg);
+}
+    100%{background-color: #fee;
+        transform: rotate(0deg);
+    }
 }
 @keyframes break5{
-    0%{background-color: #822b94;}
-    50%{background-color: #6a2e8d;
-    transform: rotate(360deg);}
-    100%{background-color: #c95ed3e7;
-        transform: rotate(432deg);}
+    0%{background-color: #fee;
+    transform: rotate(0deg);} 
+    50%{background-color: #faa;
+    transform: rotate(648deg);
+}
+    100%{background-color: #fee;
+        transform: rotate(0deg);
+    }
 }
 
 .flower{
@@ -173,25 +188,25 @@ header {
     border-radius: 0 100px;
     transform-origin: 100% 100%;
     position: absolute;
-    animation: break1 5s infinite;
+    animation: break1 7s infinite;
 }
 
 .flower .flower2 {
     transform: rotate(72deg);
-    animation: break2 5s infinite;
+    animation: break2 7s infinite;
 }
 
 .flower .flower3 {
     transform: rotate(144deg);
-    animation: break3 5s infinite;
+    animation: break3 7s infinite;
 }
 
 .flower .flower4 {
     transform: rotate(216deg);
-    animation: break4 5s infinite;
+    animation: break4 7s infinite;
 }
 
 .flower .flower5 {
     transform: rotate(288deg);
-    animation: break5 5s infinite;
+    animation: break5 7s infinite;
 }
