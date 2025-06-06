@@ -1,0 +1,261 @@
+body { 
+margin:0px;  
+padding:0px; 
+text-align:center; 
+font-size:12px; 
+ background:#3E2723; /*背景颜色 */
+} 
+#container{ 
+ position:relative; 
+ margin:0px auto 0px auto; 
+ width:780px; 
+ text-align:left; 
+} 
+div br{ 
+display:none; 
+} 
+#globallink{ 
+margin:0px; padding:0px; 
+} 
+#globallink ul{ 
+list-style:none; 
+padding:0px; margin:0px; 
+} 
+#globallink li{ 
+float:left;  
+text-align:center; 
+width:156px;  
+} 
+#globallink a{ 
+display:block; 
+padding:9px 6px 11px 6px; 
+background-color: #A0522D;
+margin:0px; 
+} 
+#globallink a:link, #globallink a:visited{ 
+color: #F5F5F5; /*导航文字颜色 */
+text-decoration:underline; 
+} 
+#globallink a:hover{ 
+color:#FFFFFF; 
+text-decoration:underline; 
+} 
+#left{ 
+float:left; 
+width:200px; 
+background-color:#D2B48C; /*左侧导航栏背景颜色 */
+margin:0px; 
+padding:0px 0px 5px 0px; 
+color:#3E2723; /*天气文字颜色 */
+} 
+#left div{ 
+background-color:#E0C9A6; /*天气查询背景色*/
+margin:0px 5px 0px 5px; 
+} 
+.map{ 
+margin:0px 5px 0px 5px;  
+background-color:#333333; /*?*/
+} 
+#left div h3{ 
+font-size:12px; 
+padding:4px 0px 2px 15px; 
+color:#333333; /*天气查询文字颜色 */
+margin:0px 0px 5px 0px; 
+} 
+#today{ 
+padding:0px 0px 10px 0px; 
+} 
+#today ul{ 
+list-style:none; 
+margin:-5px 0px 0px 0px; 
+padding:0px; 
+} 
+#today ul li{ 
+text-align:center; 
+} 
+#today ul li img{ 
+border:1px solid #FFFFFF; 
+margin:8px 0px 0px 0px; 
+} 
+#today ul li a:link, #today ul li a:visited{ 
+color:#d8ecff; 
+text-decoration:none; 
+} 
+#today ul li a:hover{ 
+color:#FFFF00; 
+text-decoration:underline; 
+} 
+#middle{ 
+background-color:#F8F4E3; 
+margin:0px 0px 0px 2px; 
+padding:5px 0px 0px 0px; 
+width:400px; float:left; 
+} 
+#middle div{ 
+margin-left:5px; 
+margin-right:5px; 
+position:relative; 
+} 
+#middle h2{ 
+    margin: 0;
+font-size: 30px;
+color: #A0522D;
+} 
+#beauty{ 
+/* 文字去掉，换成图片 */ 
+margin:15px 10px 0px 0px; 
+padding:0; 
+} 
+#beauty h3{ 
+background:url(img/PixPin_2025-06-06_18-09-33.png) no-repeat; 
+} 
+#beauty ul, #route ul{ 
+list-style:none; 
+margin:8px 1px 0px 1px; 
+padding:0px; 
+} 
+#beauty ul li{ 
+float:left; 
+width:97px; 
+text-align:center; 
+} 
+#beauty ul li img{ 
+border:1px solid #4ab0ff; 
+} 
+#route{ 
+clear:both; margin:0px; 
+} 
+#route h3{ 
+    margin: 0;
+font-size: 30px;
+color: #A0522D;
+} 
+#route ul li a:link, #route ul li a:visited{ 
+color:#004e8a; 
+text-decoration:none; 
+} 
+#route ul li a:hover{ 
+color:#000000; 
+text-decoration:underline; 
+} 
+#right{ 
+float:left; 
+margin:0px 0px 1px 2px; 
+width:176px; 
+background-color:#E0C9A6; 
+color:#dd6236; 
+} 
+#right div{ 
+position:relative; 
+margin-left:5px; 
+margin-right:5px; 
+background-color:#A0522D; 
+} 
+#right div h3{ 
+font-size:15px; 
+padding:4px 0px 2px 15px; 
+color:#8f1e00; 
+margin:0px 0px 5px 0px; 
+} 
+#map{ 
+margin-top:5px;  
+} 
+#map h3{
+background-color: #E0C9A6;
+}
+#map p{ 
+text-align:center; 
+margin:0px; 
+padding:2px 0px 5px 0px; 
+} 
+#map p img{ 
+border:1px solid #FFFFFF; 
+} 
+#food{ 
+padding-top:10px; 
+} 
+#food h3{
+background-color: #E0C9A6;
+}
+#food ul, #life ul{ 
+list-style:none; 
+padding:0px 0px 10px 0px; 
+margin:10px 10px 0px 10px; 
+} 
+#food ul li, #life ul li{ 
+padding:3px 0px 3px 12px; 
+border-bottom:1px dashed #EEEEEE; 
+} 
+#food ul li a:link, #food ul li a:visited, #life ul li a:link, #life ul li a:visited{ 
+color:#3E2723; 
+text-decoration:none; 
+} 
+#food ul li a:hover, #life ul li a:hover{ 
+color:#000000; 
+text-decoration:none; 
+} 
+#life{ 
+padding-top:10px; 
+padding-bottom:5px; 
+margin-bottom:5px; 
+} 
+#life h3{
+    background-color: #E0C9A6;
+}
+#footer{ 
+background-color:#FFFFFF; 
+margin:1px 0px 0px 0px; 
+clear:both; 
+position:relative; 
+padding:1px 0px 1px 0px; 
+} 
+#footer p{ 
+text-align:center; 
+padding:0px; 
+margin:4px 5px 4px 5px; 
+background-color:#5ea6eb; 
+} 
+#footer p a{ 
+color:#FFFFFF; 
+text-decoration:none; 
+} 
+#jianjie{ 
+float:left; 
+padding:10px 10px 10px 10px; 
+width:560px; 
+background-color:#F8F4E3; 
+} 
+.font1{ 
+font-size: 14px; 
+color: #3E2723; 
+line-height: 18px; 
+text-indent: 2em; 
+font-weight: normal; 
+} 
+.font2{ 
+font-size:18px; 
+font-weight:bold; 
+color:#000; 
+text-indent:2em; 
+} 
+.clear{ clear:both;} 
+.mainbox{ 
+overflow:hidden; 
+position:relative; 
+} 
+.flashbox{ 
+overflow:hidden; 
+position:relative; 
+} 
+.bitdiv{
+    display:inline-block;
+    width:18px;
+    height:18px;
+    margin:0 10px 10px 0px;
+    cursor:pointer; }
+.defimg{background-image:url(img/map.jpg)} 
+img{
+
+    width: 100%
+}
+
