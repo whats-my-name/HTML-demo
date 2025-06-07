@@ -33,12 +33,13 @@ background-color: #A0522D;
 margin:0px; 
 } 
 #globallink a:link, #globallink a:visited{ 
-color: #F5F5F5; /*导航文字颜色 */
-text-decoration:underline; 
+color:#D2B48C; /*导航文字颜色 */
+text-decoration:none; 
 } 
 #globallink a:hover{ 
 color:#FFFFFF; 
 text-decoration:underline; 
+background-color: #D2B48C;
 } 
 #left{ 
 float:left; 
@@ -142,14 +143,14 @@ text-decoration:underline;
 float:left; 
 margin:0px 0px 1px 2px; 
 width:176px; 
-background-color:#E0C9A6; 
+background-color:#D2B48C; 
 color:#dd6236; 
 } 
 #right div{ 
 position:relative; 
 margin-left:5px; 
 margin-right:5px; 
-background-color:#A0522D; 
+background-color:#D2B48C; 
 } 
 #right div h3{ 
 font-size:15px; 

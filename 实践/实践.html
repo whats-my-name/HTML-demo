@@ -22,19 +22,35 @@
   <br> 
  </div> 
  <div id="left"> 
-    <div id="weather"> 
-     <h3><span>天气查询</span></h3> 
-     <ul> 
-      <li>乌鲁木齐   雷阵雨 20℃-31℃</li> 
-      <li>吐鲁番   多云转阴 20℃-28℃</li> 
-      <li>喀什   阵雨转多云 25℃-32℃</li> 
-      <li>库尔勒   阵雨转阴 21℃-28℃</li> 
-      <li>克拉玛依   雷阵雨 26℃-30℃</li> 
-     </ul> 
-    </div> 
+    
+<div>
+    <h2 style="margin-bottom: 0;">天气查询</h2>
+    <div>
+        <div style="margin: 0px; font-size: 15px;">喀什市:</div>
+        <div id="temperature1" style="margin-left: 20px"></div>
+        <div id="description1" style="margin-left: 20px"></div>
+    </div>
+<p></p>
+    <div>
+        <div style="margin: 0px; font-size: 15px;">吐鲁番市:</div>
+        <div id="temperature2" style="margin-left: 20px"></div>
+        <div id="description2" style="margin-left: 20px"></div>
+    </div>
+<p></p>
+<div>
+    <div style="margin: 0px;">请输入城市名称的拼音:</div>
+    <input type="text" id="cityInput" placeholder="例:长春:'changchun'" style="width: 70%;">
+    <button onclick="handleSearch()" style="width: 35px;padding: 0px;">查询</button>
+    <div style="margin: 0px;">查询城市:</div>
+    <div id="city3" style="margin-left: 20px"></div>
+    <div id="temperature3" style="margin-left: 20px"></div>
+    <div id="description3" style="margin-left: 20px"></div>
+    <div id="windSpeed3" style="margin-left: 20px"></div>
+</div>
+</div> 
  
   <div id="today"> 
-   <h3><span>今日推荐</span></h3> 
+   <h2><span>今日推荐</span></h2> 
    <ul> 
     <li><a href="#"><img src="./img/喀纳斯河.jpg"></a></li> 
              <li><a href="#">喀纳斯河</a></li> 
@@ -59,14 +75,14 @@
     <li><a href="#"><img src="img/b2.webp"></a></li> 
     <li><a href="#"><img src="img/b3.webp"></a></li> 
     <li><a href="#"><img src="img/b4.webp"></a></li> 
-           </ul> 
+    </ul> 
     </marquee> 
    <br> 
   </div> 
   <div id="route"> 
    <h3>线路精选:</h3>
    <ul> 
-    <li><a href="#">吐鲁番——库尔勒——库车——塔中——和田——
+    <li><a href="">吐鲁番——库尔勒——库车——塔中——和田——
 喀什</a></li> 
     <li><a href="#">乌鲁木齐——天池——克拉马依——乌伦古湖——
 喀纳斯</a></li> 
@@ -82,43 +98,30 @@
   <div id="map"> 
    <h3><span>新疆风光</span></h3> 
 
-   <p><a href="#" ><img src="img/风光.webp"></a></p> 
-   <p><a href="#" ><img src="img/风光2.webp"></a></p> 
+   <p><img src="img/风光.webp"></p> 
+   <p><img src="img/风光2.webp"></p> 
   </div> 
  
-
-
-
-
-  
-
-
-
-
-
-
-
-
   <div id="food"> 
    <h3><span>特色小吃</span></h3> 
    <ul>
-    <li><a href="#">烤羊肉串</a></li> 
-    <li><a href="#">大盘鸡</a></li> 
-    <li><a href="#">抓饭</a></li> 
-    <li><a href="#">酸奶疙瘩</a></li> 
+    <li><a href="https://www.bilibili.com/video/BV1HBKwe7EhN/?spm_id_from=333.337.search-card.all.click" target="_blank">烤羊肉串</a></li> 
+    <li><a href="https://www.bilibili.com/video/BV1HBKwe7EhN/?spm_id_from=333.337.search-card.all.click" target="_blank">大盘鸡</a></li> 
+    <li><a href="https://www.bilibili.com/video/BV1fE411d7u6/?spm_id_from=333.337.search-card.all.click" target="_blank">抓饭</a></li> 
+    <li><a href="https://www.bilibili.com/video/BV1ho4y1Q77J/?spm_id_from=333.337.search-card.all.click" target="_blank">酸奶疙瘩</a></li> 
    </ul> 
    <br> 
   </div> 
   <div id="life"> 
    <h3><span>宾馆酒店</span></h3> 
    <ul> 
-    <li><a href="#">天缘酒店</a></li> 
-    <li><a href="#">海德酒店</a></li> 
-    <li><a href="#">银都大饭店</a></li> 
-    <li><a href="#">鸿福大饭店</a></li> 
-    <li><a href="#">友好大酒店</a></li> 
-    <li><a href="#">南山庄园</a></li> 
-    <li><a href="#">如家宾馆</a></li> 
+    <li><a target="_blank" href="http://urumqitianyuan.hotelurumchi.cn/">天缘酒店</a></li> 
+    <li><a target="_blank" href="http://hotel23997.round-world-trip.com/">乌鲁木齐信达海德酒店</a></li> 
+    <li><a target="_blank" href="https://www.luxemonyindu.cn/">新疆尊茂银都酒店</a></li> 
+    <li><a target="_blank" href="https://zhuna.com/jiudian/0c/4758.html">乌鲁木齐鸿福大饭店</a></li> 
+    <li><a target="_blank" href="http://youhao.hotelurumchi.cn/">乌鲁木齐友好大酒店</a></li> 
+    <li><a target="_blank" href="http://urumchinanshanmanor.hotelurumchi.cn/">乌鲁木齐南山庄园(Nanshan Manor)</a></li> 
+    <li><a target="_blank" href="https://hotels.ctrip.com/hotels/70427146.html">如家酒店(乌鲁木齐军区总医院店)</a></li> 
    </ul> 
    <br> 
   </div> 
