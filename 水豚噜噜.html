@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>demo</title>
+
+<style>
+  #enlargeButton {
+    transition: width 0.3s ease, height 0.3s ease, padding 0.3s ease, border-radius 0.3s ease; /* 添加过渡动画 */
+  }
+  body{
+    background-color: #6ED7F4;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 使容器高度充满整个视口 */
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition: opacity 0.5s ease;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* 添加按钮容器与上方元素的距离 */
+  }
+  
+  .l {
+    margin-right: 20px; /* 添加左边按钮与右边按钮的距离 */
+    font-size: 60px; 
+    padding: 16px;
+  }
+  .r{
+    font-size: 60px; 
+    padding: 16px;
+  }
+  button {
+  border-radius: 30px; /* 添加10像素的圆角 */
+  background-color:#0A7BD1;
+  color:#FFFFFF;
+  border: none;
+}
+#txt{
+    font-size: 60px;
+    color: #333333;
+    font-family: '宋体';
+    text-align: center;
+    margin-bottom: 20px;
+}
+  #re {
+    position: fixed; /* 固定定位 */
+    top: 20px; /* 距离顶部20px */
+    right: 20px; /* 距离右边20px */
+    font-size: 24px; /* 较小的字体大小 */
+    padding: 8px 16px; /* 较小的内边距 */
+    border-radius: 20px; /* 圆角 */
+    background-color: #0A7BD1;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2); /* 添加阴影效果 */
+    transition: all 0.3s ease; /* 添加过渡效果 */
+    z-index: 1000; /* 确保按钮始终位于最上层 */
+  }
+
+</style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img id="image1" src="img/gif/鲜花.gif" alt="鲜花1">
+            <img id="image2" src="img/gif/威胁.gif" alt="威胁">
+            <img id="image3" src="img/gif/哭泣.gif" alt="鲜花2">
+            <img id="image4" class="hidden" src="img/gif/趴下.gif" >
+            <img id="image5" class="hidden" src="img/gif/跺脚.gif" >
+            <img id="image6" class="hidden" src="img/gif/开心.gif" alt="">
+            <img id="image7" class="hidden" src="img/gif/浇水.gif" alt="">
+
+        </div>
+        <h1 id="txt">水豚噜噜想要和你做朋友</h1>
+        <div class="button-container">
+            <button id="enlargeButton" class="l" onclick="happy()">同意</button>
+            <button id = "r"class="r">不同意</button>
+            <button id="re" onclick="refersh()">刷新</button>
+        </div>
+    </div>
+
+<script>
+    const t = document.getElementById('txt');
+  const buttonr = document.getElementById('r');
+  const button = document.getElementById('enlargeButton');
+  const image1 = document.getElementById('image1');
+  const image2 = document.getElementById('image2');
+  const image3 = document.getElementById('image3');
+  const image4 = document.getElementById('image4');
+  const image5 = document.getElementById('image5');
+ const image6 = document.getElementById('image6');
+  const image7 = document.getElementById('image7');
+
+  const counter = document.getElementById('enlargeButton');
+    const messages = [
+    "什么你竟然不想和噜噜做朋友?",
+    "别点这个不同意了!",
+    "点点这个同意吧！",
+    "还在点不同意?!!!",
+    "已经点了很多次了，再点几次试试!!!",
+    "真的不想和噜噜做朋友吗?",
+    "还剩3次就到10下了",
+    "那么大个同意没看见吗?!!!",
+    "点最大的同意啊!!!",
+    "都已经点了10次不同意了,好伤心..."
+  ];
+  
+  let size = 60; // 初始字体大小（单位：像素）
+  let padding = 8; // 初始内边距（单位：像素）
+  let borderRadius = 30; // 初始圆角大小（单位：像素）
+  let clickCount = 0; // 初始点击次数
+  
+  // 隐藏第二张和第三张图片，只显示第一张
+  image2.style.display = 'none';
+  image3.style.display = 'none';
+  r.addEventListener('click', function() {
+    // 增加点击次数
+    clickCount++;
+    
+    // 更新按钮样式
+    size += 30; // 每次点击增加2像素
+    padding += 10; // 每次点击增加1像素的内边距
+    borderRadius += 1; // 每次点击增加1像素的圆角
+    
+    enlargeButton.style.fontSize = `${size}px`;
+    enlargeButton.style.padding = `${padding}px`;
+    enlargeButton.style.borderRadius = `${borderRadius}px`;
+    
+    // 检查是否达到10次点击
+    if (clickCount === 2) {
+      // 显示第二张图片，隐藏其他图片
+      image1.style.display = 'none';
+      image2.style.display = 'block';
+      image3.style.display = 'none';
+      image4.style.display = 'none';
+      image5.style.display = 'none';
+      image6.style.display = 'none';
+      image7.style.display = 'none';
+    }
+
+    if (clickCount === 4) {
+      // 显示第三张图片，隐藏其他图片
+      image1.style.display = 'none';
+      image2.style.display = 'none';
+      image3.style.display = 'block';
+      image4.style.display = 'none';
+      image5.style.display = 'none';
+      image6.style.display = 'none';
+      image7.style.display = 'none';
+    }
+
+    if (clickCount === 6) {
+      // 显示第四张图片，隐藏其他图片
+      image1.style.display = 'none';
+      image2.style.display = 'none';
+      image3.style.display = 'none';
+      image4.style.display = 'block';
+      image5.style.display = 'none';
+      image6.style.display = 'none';
+      image7.style.display = 'none';
+    }
+
+    if (clickCount === 8) {
+      // 显示第五张图片，隐藏其他图片
+      image1.style.display = 'none';
+      image2.style.display = 'none';
+      image3.style.display = 'none';
+      image4.style.display = 'none';
+      image5.style.display = 'block';
+      image6.style.display = 'none';
+      image7.style.display = 'none';
+    }
+
+    if (clickCount === 10) {
+      // 显示第五张图片，隐藏其他图片
+      image1.style.display = 'none';
+      image2.style.display = 'none';
+      image3.style.display = 'none';
+      image4.style.display = 'none';
+      image5.style.display = 'none';
+      image6.style.display = 'none';
+      image7.style.display = 'block';
+    }
+
+    // 检查是否达到10次点击
+     if (clickCount <= messages.length) {
+      // 淡出
+      t.style.opacity = 0;
+      
+      // 淡入新文字
+      setTimeout(() => {
+        t.textContent = messages[clickCount - 1];
+       t.style.opacity = 1;
+      }, 10);
+    }
+    if (clickCount >= 10) {
+        t.textContent = `已经点了${clickCount}次不同意了,好伤心...`;
+    }
+
+  });
+
+      function happy(){
+        t.textContent = document.getElementById('txt').innerHTML = "水豚噜噜很高兴和你做朋友";
+        image1.style.display = 'none';
+      image2.style.display = 'none';
+      image3.style.display = 'none';
+      image4.style.display = 'none';
+      image5.style.display = 'none';
+      image6.style.display = 'block';
+      image7.style.display = 'none';
+
+      enlargeButton.style.fontSize = '60px';
+    enlargeButton.style.padding = `16px`;
+    enlargeButton.style.borderRadius = `30px`;
+    buttonr.style.display = 'none';
+    document.getElementById('enlargeButton').innerHTML = "我们是好朋友了";
+    }
+
+    function refersh(){
+         location.reload();
+    }
+</script>
+</body>
+</html>
