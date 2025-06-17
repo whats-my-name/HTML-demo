@@ -11,9 +11,6 @@ font-size:12px;
  width:780px; 
  text-align:left; 
 } 
-div br{ 
-display:none; 
-} 
 #globallink{ 
 margin:0px; padding:0px; 
 } 
@@ -259,4 +256,9 @@ img{
 
     width: 100%
 }
-
+.jianjie{
+    margin: 0 auto;
+padding:10px 10px 10px 10px; 
+width:560px; 
+background-color:#F8F4E3; 
+}
