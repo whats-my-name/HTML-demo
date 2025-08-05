@@ -48,7 +48,7 @@ h1 {
     border-radius: 2.25rem;
     cursor: pointer;
     width: 40%;
-    margin: -0rem 0;
+    margin: 5px,0.5px;
     transition: background-color 0.3s;
 }
 .button:hover {
