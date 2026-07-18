@@ -1,133 +1,148 @@
 <!DOCTYPE html>
-<html lang="zn-ch">
+<html lang="zh-CN">
 
-<head> 
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
-<title>新疆行</title> 
-<link href="实践.css" rel="stylesheet" type="text/css" /> 
-<script type="text/javascript" src="js.js"></script> 
-</head> 
- 
-<body> 
-<div id="container"> 
-  <div id="banner"><img src="img/head.png"></div> 
- <div id="globallink"> 
-  <ul> 
-   <li><a href="实践.html">首页</a></li> 
-   <li><a href="jianjie.html">新疆简介</a></li> 
-   <li><a href="fengtu.html">风土人情</a></li> 
-   <li><a href="eat.html">吃在新疆</a></li> 
-   <li><a href="route.html">路线选择</a></li> 
-  </ul> 
-  <br> 
- </div> 
- <div id="left"> 
-    
-<div>
-    <h2 style="margin-bottom: 0;">天气查询</h2>
-    <div>
-        <div style="margin: 0px; font-size: 15px;">喀什市:</div>
-        <div id="temperature1" style="margin-left: 20px"></div>
-        <div id="description1" style="margin-left: 20px"></div>
-    </div>
-<p></p>
-    <div>
-        <div style="margin: 0px; font-size: 15px;">吐鲁番市:</div>
-        <div id="temperature2" style="margin-left: 20px"></div>
-        <div id="description2" style="margin-left: 20px"></div>
-    </div>
-<p></p>
-<div>
-    <div style="margin: 0px;">请输入城市名称的拼音:</div>
-    <input type="text" id="cityInput" placeholder="例:长春:'changchun'" style="width: 70%;">
-    <button onclick="handleSearch()" style="width: 35px;padding: 0px;">查询</button>
-    <div style="margin: 0px;">查询城市:</div>
-    <div id="city3" style="margin-left: 20px"></div>
-    <div id="temperature3" style="margin-left: 20px"></div>
-    <div id="description3" style="margin-left: 20px"></div>
-    <div id="windSpeed3" style="margin-left: 20px"></div>
-</div>
-</div> 
- 
-  <div id="today"> 
-   <h2><span>今日推荐</span></h2> 
-   <ul> 
-    <li><a href="img/喀纳斯河.jpg" target="_blank"><img src="./img/喀纳斯河.jpg"></a></li> 
-             <li>喀纳斯河</li> 
-    <li><a href="img/吐鲁番.webp" target="_blank"><img src="./img/吐鲁番.webp"></a></li> 
-    <li>吐鲁番</li> 
-    <li><a href="img/天山天池.webp" target="_blank"><img src="./img/天山天池.webp"></a></li> 
-    <li>天山天池</li> 
-   </ul> 
-   <br>
-   </div> 
- </div> 
- <div id="middle"> 
-    <!--begin --> 
-        <div id="xxx"  > 
-  <a href="img/h3.webp" target="_blank"><img src="img/h3.webp"></a> 
- </div> 
-<!--end --> 
-<h2>图片展示:</h2>
-  <div id="beauty"> 
-   <marquee><ul> 
-    <li><a href="img/b1.webp"  target="_blank"><img src="img/b1.webp"></a></li> 
-    <li><a href="img/b2.webp"  target="_blank"><img src="img/b2.webp"></a></li> 
-    <li><a href="img/b3.webp"  target="_blank"><img src="img/b3.webp"></a></li> 
-    <li><a href="img/b4.webp"  target="_blank"><img src="img/b4.webp"></a></li> 
-    </ul> 
-    </marquee> 
-   <br> 
-  </div> 
-  <div id="route"> 
-   <h3>线路精选:</h3>
-   <ul> 
-    <li>吐鲁番——库尔勒——库车——塔中——和田——
-喀什</li> 
-    <li>乌鲁木齐——天池——克拉马依——乌伦古湖——
-喀纳斯</li> 
-    <li>乌鲁木齐——奎屯——乔尔玛——那拉提——巴音
-布鲁克</li> 
-    <li>乌鲁木齐——五彩城——将军隔壁——吉木萨尔
-</li> 
-   </ul> 
-   <br> 
-  </div> 
- </div> 
- <div id="right"> 
-  <div id="map"> 
-   <h3><span>新疆风光</span></h3> 
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>新疆行</title>
+  <link href="实践.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="js.js"></script>
+</head>
 
-   <p><a href="img/风光.webp" target="_blank" ><img src="img/风光.webp"></p></a>
-   <p><a href="img/风光2.webp" target="_blank"><img src="img/风光2.webp"></p></a>
-  </div> 
- 
-  <div id="food"> 
-   <h3><span>特色小吃</span></h3> 
-   <ul>
-    <li><a href="https://www.bilibili.com/video/BV1HBKwe7EhN/?spm_id_from=333.337.search-card.all.click" target="_blank">烤羊肉串</a></li> 
-    <li><a href="https://www.bilibili.com/video/BV1HBKwe7EhN/?spm_id_from=333.337.search-card.all.click" target="_blank">大盘鸡</a></li> 
-    <li><a href="https://www.bilibili.com/video/BV1fE411d7u6/?spm_id_from=333.337.search-card.all.click" target="_blank">抓饭</a></li> 
-    <li><a href="https://www.bilibili.com/video/BV1ho4y1Q77J/?spm_id_from=333.337.search-card.all.click" target="_blank">酸奶疙瘩</a></li> 
-   </ul> 
-   <br> 
-  </div> 
-  <div id="life"> 
-   <h3><span>宾馆酒店</span></h3> 
-   <ul> 
-    <li><a target="_blank" href="http://urumqitianyuan.hotelurumchi.cn/">天缘酒店</a></li> 
-    <li><a target="_blank" href="http://hotel23997.round-world-trip.com/">乌鲁木齐信达海德酒店</a></li> 
-    <li><a target="_blank" href="https://www.luxemonyindu.cn/">新疆尊茂银都酒店</a></li> 
-    <li><a target="_blank" href="https://zhuna.com/jiudian/0c/4758.html">乌鲁木齐鸿福大饭店</a></li> 
-    <li><a target="_blank" href="http://youhao.hotelurumchi.cn/">乌鲁木齐友好大酒店</a></li> 
-    <li><a target="_blank" href="http://urumchinanshanmanor.hotelurumchi.cn/">乌鲁木齐南山庄园(Nanshan Manor)</a></li> 
-    <li><a target="_blank" href="https://hotels.ctrip.com/hotels/70427146.html">如家酒店(乌鲁木齐军区总医院店)</a></li> 
-   </ul> 
-   <br> 
-  </div> 
- </div> 
- </div> 
-     <div class="clear"></div> 
-     </div> 
-</body> 
+<body>
+  <div id="container">
+    <!-- Banner -->
+    <div id="banner"><img src="img/head.png" alt="新疆行"></div>
+
+    <!-- 导航栏 -->
+    <div id="globallink">
+      <ul>
+        <li><a href="实践.html">首页</a></li>
+        <li><a href="jianjie.html">新疆简介</a></li>
+        <li><a href="fengtu.html">风土人情</a></li>
+        <li><a href="eat.html">吃在新疆</a></li>
+        <li><a href="route.html">路线选择</a></li>
+      </ul>
+    </div>
+
+    <!-- 三栏主体 -->
+    <div class="main-row">
+      <!-- 左侧栏 -->
+      <div id="left-dis">
+        <!-- 天气查询 -->
+        <div class="weather-card">
+          <h3>天气查询</h3>
+          <div class="weather-city">喀什市：</div>
+          <div class="weather-info">
+            <div id="temperature1"></div>
+            <div id="description1"></div>
+          </div>
+          <div class="weather-city">吐鲁番市：</div>
+          <div class="weather-info">
+            <div id="temperature2"></div>
+            <div id="description2"></div>
+          </div>
+          <div class="weather-search">
+            <label>请输入城市名称拼音：</label>
+            <div class="weather-search-row">
+              <input type="text" id="cityInput" placeholder="例如：changchun" />
+              <button onclick="handleSearch()">查询</button>
+            </div>
+            <div style="margin-top: 8px; font-size: 13px; color: #3E2723;">
+              <div id="city3"></div>
+              <div id="temperature3"></div>
+              <div id="description3"></div>
+              <div id="windSpeed3"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 今日推荐 -->
+        <div id="today">
+          <h3>今日推荐</h3>
+          <ul>
+            <li><a href="img/喀纳斯河.jpg" target="_blank"><img src="./img/喀纳斯河.jpg" alt="喀纳斯河"></a>喀纳斯河</li>
+            <li><a href="img/吐鲁番.webp" target="_blank"><img src="./img/吐鲁番.webp" alt="吐鲁番"></a>吐鲁番</li>
+            <li><a href="img/天山天池.webp" target="_blank"><img src="./img/天山天池.webp" alt="天山天池"></a>天山天池</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 中间栏 -->
+      <div id="middle">
+        <!-- 头图 -->
+        <div id="xxx">
+          <a href="img/h3.webp" target="_blank"><img src="img/h3.webp" alt="新疆风光"></a>
+        </div>
+
+        <h2>图片展示</h2>
+        <div id="beauty">
+          <ul class="scroll-gallery">
+            <li><a href="img/b1.webp" target="_blank"><img src="img/b1.webp" alt=""></a></li>
+            <li><a href="img/b2.webp" target="_blank"><img src="img/b2.webp" alt=""></a></li>
+            <li><a href="img/b3.webp" target="_blank"><img src="img/b3.webp" alt=""></a></li>
+            <li><a href="img/b4.webp" target="_blank"><img src="img/b4.webp" alt=""></a></li>
+            <!-- 复制一份实现无缝滚动 -->
+            <li><a href="img/b1.webp" target="_blank"><img src="img/b1.webp" alt=""></a></li>
+            <li><a href="img/b2.webp" target="_blank"><img src="img/b2.webp" alt=""></a></li>
+            <li><a href="img/b3.webp" target="_blank"><img src="img/b3.webp" alt=""></a></li>
+            <li><a href="img/b4.webp" target="_blank"><img src="img/b4.webp" alt=""></a></li>
+          </ul>
+        </div>
+
+        <h3>线路精选</h3>
+        <div id="route">
+          <ul>
+            <li>北疆7日游(行程较为紧凑):<br>独库公路、那拉提空中草原、薰衣园(花期安排)、
+                赛里木湖、乌尔禾魔鬼城、五彩滩、喀纳斯景区、 禾木景区; </li>
+            <li>北疆8日游(热门线路):<br>天山天池、独库公路、那拉提空中草原、
+                薰衣园(花期安排)、赛里木湖、乌尔禾魔鬼城、五彩滩、喀纳斯景区、 禾木景区</li>
+            <li>北疆9日游(热门线路):<br>乌伦古湖、喀纳斯景区、禾木景区、乌尔禾魔鬼城、
+                五彩滩、独库公路、那拉提空中草原、薰衣园(花期安排)、赛里木湖、巴音布鲁克草原</li>
+            <li>北疆10日游(热门线路):<br>天山天池、喀纳斯景区、禾木景区、阿禾公路、乌尔禾魔鬼城、
+                独山子大峡谷、五彩滩、独库公路、那拉提空中草原、薰衣园(花期安排)、赛里木湖、
+                喀拉峻草原、特克斯八卦城、恰西/库尔德宁</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 右侧栏 -->
+      <div id="right">
+        <!-- 新疆风光 -->
+        <div id="map" class="right-card">
+          <h3>新疆风光</h3>
+          <p><a href="img/风光.webp" target="_blank"><img src="img/风光.webp" alt="新疆风光"></a></p>
+          <p><a href="img/风光2.webp" target="_blank"><img src="img/风光2.webp" alt="新疆风光"></a></p>
+        </div>
+
+        <!-- 特色小吃 -->
+        <div id="food" class="right-card">
+          <h3>特色小吃</h3>
+          <ul>
+            <li><a href="https://www.bilibili.com/video/BV1HBKwe7EhN/?spm_id_from=333.337.search-card.all.click" target="_blank">烤羊肉串</a></li>
+            <li><a href="https://www.bilibili.com/video/BV1HBKwe7EhN/?spm_id_from=333.337.search-card.all.click" target="_blank">大盘鸡</a></li>
+            <li><a href="https://www.bilibili.com/video/BV1fE411d7u6/?spm_id_from=333.337.search-card.all.click" target="_blank">抓饭</a></li>
+            <li><a href="https://www.bilibili.com/video/BV1ho4y1Q77J/?spm_id_from=333.337.search-card.all.click" target="_blank">酸奶疙瘩</a></li>
+          </ul>
+        </div>
+
+        <!-- 宾馆酒店 -->
+        <div id="life" class="right-card">
+          <h3>宾馆酒店</h3>
+          <ul>
+            <li><a target="_blank" href="http://urumqitianyuan.hotelurumchi.cn/">天缘酒店</a></li>
+            <li><a target="_blank" href="http://hotel23997.round-world-trip.com/">乌鲁木齐信达海德酒店</a></li>
+            <li><a target="_blank" href="https://www.luxemonyindu.cn/">新疆尊茂银都酒店</a></li>
+            <li><a target="_blank" href="https://zhuna.com/jiudian/0c/4758.html">乌鲁木齐鸿福大饭店</a></li>
+            <li><a target="_blank" href="http://youhao.hotelurumchi.cn/">乌鲁木齐友好大酒店</a></li>
+            <li><a target="_blank" href="http://urumchinanshanmanor.hotelurumchi.cn/">乌鲁木齐南山庄园</a></li>
+            <li><a target="_blank" href="https://hotels.ctrip.com/hotels/70427146.html">如家酒店(乌鲁木齐军区总医院店)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+</body>
+
 </html>
